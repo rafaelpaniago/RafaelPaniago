@@ -1,1 +1,14 @@
+-- MER EM SQL
 
+-- ETAPAS
+-- 1. Definição
+-- 2. Criação das tabelas
+-- 3. Inserção de valores nas tabelas
+-- 4. Criação de Diagrama de Banco de Dados
+-- 5. Consultas em nossas tabelas que já estão relacionadas
+
+-- 1. Definição
+-- MER: Modelo Entidade Relacionamento
+-- Nada mais é do que a relação entre as tabelas (entidades) do nosso BD.
+-- Imagine que temos três tabelas: Produtos, Clientes, Vendas. 
+-- A ideia é manter a integridade dos dados e performar melhor as consultas. 

@@ -15,7 +15,7 @@
 
 
 -- 2. CRIAÇÃO DAS TABELAS
-
+-- Aqui vou trazer o exemplo da criação das tabelas: Clientes, Produtos e Vendedores
 ----------------------------
 -- Criando a tabela CLIENTES
 IF EXISTS (SELECT 1 FROM SYS.OBJECTS WHERE TYPE = 'U' AND NAME = 'CLIENTES')
@@ -56,17 +56,37 @@ ID_VENDEDOR   INTEGER PRIMARY KEY,
 NOME_VENDEDOR VARCHAR (100))
 
 ----------------------------
--- Criando a tabela VENDAS
-IF EXISTS (SELECT 1 FROM SYS.OBJECTS WHERE TYPE = 'U' AND NAME = 'VENDAS')
-	BEGIN
-		DROP TABLE VENDAS
-	END
-GO
 
-CREATE TABLE VENDAS(
-ID_VENDA      INTEGER PRIMARY KEY,
-ID_CLIENTE    INTEGER FOREIGN KEY REFERENCES CLIENTES(ID_CLIENTE),
-ID_VENDEDOR   INTEGER FOREIGN KEY REFERENCES VENDEDORES(ID_VENDEDOR),
-ID_PRODUTO    INTEGER FOREIGN KEY REFERENCES PRODUTOS(ID_PRODUTO),
-QUANTIDADE    INTEGER,
-DATA_VENDA    DATE)
+
+-- 3. INSERINDO VALORES NAS TABELAS
+-- Aqui vou trazer o exemplo de inserção de valores nas tabelas: CLIENTES, PRODUTOS e VENDEDORES
+
+-- Inserindo valores na tabela CLIENTES
+INSERT INTO CLIENTES VALUES (1045,'Cardon One','Star City')
+INSERT INTO CLIENTES VALUES (3206,'Lefbronx','WS City')
+INSERT INTO CLIENTES VALUES (4788,'Chauri Moon','Star City')
+INSERT INTO CLIENTES VALUES (1154,'Seven T.','WS City')
+
+-- Inserindo valores na tabela PRODUTOS
+INSERT INTO PRODUTOS VALUES (8850,'Shirt Pac 10','Pac Tren',108)
+INSERT INTO PRODUTOS VALUES (7751,'Clow N VV2','Brand New Clow',154)
+INSERT INTO PRODUTOS VALUES (8851,'Basic Pac X','Pac Tren',139)
+INSERT INTO PRODUTOS VALUES (7750,'New C. Balac','Brand New Clow',89)
+
+-- Inserindo valores na tabela VENDEDORES
+INSERT INTO VENDEDORES VALUES (1,'Isfim')
+INSERT INTO VENDEDORES VALUES (2,'Duain')
+INSERT INTO VENDEDORES VALUES (3,'Nekie')
+INSERT INTO VENDEDORES VALUES (4,'Xuano')
+INSERT INTO VENDEDORES VALUES (5,'Mufi')
+INSERT INTO VENDEDORES VALUES (6,'Faldek')
+INSERT INTO VENDEDORES VALUES (7,'Agron')
+INSERT INTO VENDEDORES VALUES (8,'Firon')
+
+
+
+-- 4. Criação de Diagrama de Banco de Dados
+-- Antes de fazer as consultas, vamos criar o relacionamento entre as tabelas. 
+-- No Management Studio, clicamos com o botão direito em “Diagramas de Banco de Dados”.
+-- Podemos ver que o SQL já monta o modelo de entidade e relacionamento.
+

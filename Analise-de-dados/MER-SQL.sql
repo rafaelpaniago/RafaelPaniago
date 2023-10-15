@@ -89,4 +89,38 @@ INSERT INTO VENDEDORES VALUES (8,'Firon')
 -- Antes de fazer as consultas, vamos criar o relacionamento entre as tabelas. 
 -- No Management Studio, clicamos com o botão direito em “Diagramas de Banco de Dados”.
 -- Podemos ver que o SQL já monta o modelo de entidade e relacionamento.
+-- Basicamente, isso é o nosso MER.
+-- Agora podemos realizar consultas utilizando esse vínculo existente entre as tabelas.
 
+
+
+-- 5. Consultas em nossas tabelas que já estão relacionadas
+
+SELECT * FROM VENDAS A(NOLOCK) -- O A É um alias (apelido) pra não digitar o nome da tabela
+INNER JOIN CLIENTES B(NOLOCK) ON (B.ID_CLIENTE=A.ID_CLIENTE)
+INNER JOIN VENDEDORES C(NOLOCK) ON (C.ID_VENDEDOR=A.ID_VENDEDOR)
+INNER JOIN PRODUTOS D(NOLOCK) ON (D.ID_PRODUTO=A.ID_PRODUTO)
+
+-- AGORA VAMOS CONSIDERAR QUE QUEREMOS ALGUMAS INFORMAÇÕES ESPECÍFICAS
+
+SELECT
+B.ID_CLIENTE,
+B.NOME_CLIENTE,
+C.NOME_VENDEDOR,
+D.PRODUTO,
+A.QUANTIDADE
+FROM VENDAS A(NOLOCK)
+INNER JOIN CLIENTES B(NOLOCK) ON (B.ID_CLIENTE=A.ID_CLIENTE)
+INNER JOIN VENDEDORES C(NOLOCK) ON (C.ID_VENDEDOR=A.ID_VENDEDOR)
+INNER JOIN PRODUTOS D(NOLOCK) ON (D.ID_PRODUTO=A.ID_PRODUTO)
+
+
+SELECT
+B.NOME_CLIENTE,
+C.NOME_VENDEDOR,
+D.PRODUTO,
+A.QUANTIDADE
+FROM VENDAS A(NOLOCK)
+INNER JOIN CLIENTES B(NOLOCK) ON (B.ID_CLIENTE=A.ID_CLIENTE)
+INNER JOIN VENDEDORES C(NOLOCK) ON (C.ID_VENDEDOR=A.ID_VENDEDOR)
+INNER JOIN PRODUTOS D(NOLOCK) ON (D.ID_PRODUTO=A.ID_PRODUTO)

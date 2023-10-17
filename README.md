@@ -1,6 +1,6 @@
 <h1 align="center">Olá! Eu sou o Rafael Paniago</h1>
 
-- 🌱 Atualmente trabalho como Analista de Dados e tenho muito interesse em **SQL, Python, Excel e Machine Learning**
+- 👨‍💻 Atualmente trabalho como Analista de Dados e tenho muito interesse em **SQL, Python, Excel e Machine Learning**
 - 📝 Compartilho conteúdos de Data Analytics, Marketing e SEO no site [https://inviewdata.com/](https://inviewdata.com/)
 - 📫 Você me acha através do e-mail: **rafaelpaniago1@gmail.com**
 

@@ -9,7 +9,7 @@
 <h3 align="left">Repositórios</h3>
 <a href="https://github.com/rafaelpaniago/portfolio">Portfólio:</a> Aqui é onde disponibilizo meus projetos em Análise de Dados.<br>
 <a href="https://github.com/rafaelpaniago/artigos">Artigos:</a> Artigos publicados no medium.<br>
-<a href="https://github.com/rafaelpaniago/cursos">ArtigosCursos:</a> Aqui compartilho cursos que fiz e venho fazendo na área de Dados.
+<a href="https://github.com/rafaelpaniago/cursos">Cursos:</a> Aqui compartilho cursos que fiz e venho fazendo na área de Dados.
 
 <h3 align="left">Redes</h3>
 <p align="left">

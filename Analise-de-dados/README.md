@@ -2,9 +2,8 @@
 
 # Bem-vindo ao Meu Portfólio de Análise de Dados
 
-Sou um entusiasta da Análise de Dados, sempre em busca de aprimorar minhas habilidades e conhecimentos. Ingressei recentemente no mercado de trabalho como Analista de Dados e estou animado para aprender e crescer nesta área incrivelmente dinâmica.
-
-Acredito que cada desafio é uma oportunidade de aprendizado, e estou ansioso para compartilhar meus progressos por aqui.
+Atualmente trabalho como Analista de Dados. Estou sempre buscando aprimorar minhas habilidades e conhecimentos. 
+Acredito que cada desafio é uma oportunidade de aprendizado. Aqui eu quero compartilhar meus progressos.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
